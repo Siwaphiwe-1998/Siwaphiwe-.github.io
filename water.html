@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>MQUMA LOCAL MUNICIPALITY SITE</title>
+    
+ 
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/StyleMnquma.css">
+   
+
+  </head>
+
+<body style="background-color:grey;">
+
+  
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>MNQUMA </em> Municipality</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+      	<li><a href="index.html" class ="eternal">HOME</a></li>
+        <li><a href="Departments.html" class ="eternal">DEPARTMENTS</a></li>
+         <li class="has-submenu"><a href="#">Bill</a>
+          <ul class="sub-menu">
+            <li><a href="water.html">Water</a></li>
+            <li><a href="Electricity.html">Electricity</a></li>
+            
+            
+          </ul>
+        </li>
+        <li><a href="News.html" class ="external">Latest news</a></li>
+        <li><a href="About/Aboutus.html">About us</a></li>
+        
+        
+      </ul>
+    </nav>
+  </header>
+
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+   <center><h1 style="color:white">CALCULATE WATER BILL DUE HERE</h1> </center>
+    <p id = 'demo'></p>
+            <br></br>
+            <p> <center><h2 style="color:white"> PREVIOUS MONTH</h2></center></p>
+            <br></br>
+         <center> <input type='text' id='number'></center>
+             <br></br>
+             <br></br> 
+           <p> <center><h2 style="color:white"> CURRENT MONTH</h2></center></p>
+            <br></br>
+          <center> <input type='text' id='number2'></center>  
+      <br></br>
+      <br></br>
+       <center><button onclick= "alert(calc())"><b>CALCULATE<b></button> </center>
+
+       	 <br></br>
+         <br></br>
+    
+<script>
+  
+  function calc(){
+
+    var p1=parseInt(document.getElementById('number').value);
+    var p2=parseInt(document.getElementById('number2').value);
+    var b1= 2;
+    var b2= 10;
+    var b3= 16;
+    var tot=(p1-p2);
+        
+     if (tot >=0 || tot <= 2){
+     	return ("your total Bill to be paid is :" +"R"+ tot*b1);
+    
+     }
+       
+     if (tot >=2 || tot <= 10){
+     	return ("your total Bill to be paid is :" +"R"+ tot*b2);
+    
+     }
+
+     if (tot >= 10 || tot <=16){
+     	return ("your total Bill to be paid is :" +"R"+ tot*b3);
+    
+     }
+  }
+
+ 
+</script>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by Padre 
+          
+           | Design: <a href="" rel="sponsored" target="_parent">Siwaphiwe Mbelu; customercare@mnquma.gov.za Telephone: 047 401 2400; Fax: 047 491 0195</a> </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>
